@@ -1,1 +1,4 @@
+USE data_science_job_salaries;
 
+SELECT salary_in_usd, remote_ratio, company_size, experience_level FROM `ds.salaries`
+WHERE job_title = 'Data Scientist' AND employment_type = 'FT' AND work_year = 2022;
