@@ -26,8 +26,9 @@ The data visualizations are in the folder
 
 # How to run this program
 
+In the terminal enter:
 ```
 cd desktop
-git clone 
-python3 
+git clone https://github.com/Harjot66/data_scientist_salaries_analysis.git
+python3 data_scientist_salaries_analysis
 ```
