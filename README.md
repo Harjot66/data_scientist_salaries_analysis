@@ -8,12 +8,12 @@ This dataset has been retrieved from https://www.kaggle.com/datasets/niyalthakka
 
 The results that were found through this analysis are:
 
-                      The correlation between salary and proportion of remote work is 0.15.
+```
+The correlation between salary and proportion of remote work is 0.15.
+The correlation between salary and company size is 0.02.
+The correlation between salary and experience level is 0.62.
+```
 
-                      The correlation between salary and company size is 0.02.
-
-                      The correlation between salary and experience level is 0.62.
-                      
 The data visualizations are in the folder
 
 # Discussion
