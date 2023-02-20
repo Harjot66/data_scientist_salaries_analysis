@@ -14,3 +14,12 @@ This dataset has been retrieved from https://www.kaggle.com/datasets/niyalthakka
 
 # Conclusion
 
+
+
+# How to run this program
+
+```
+cd desktop
+git clone 
+python3 
+```
