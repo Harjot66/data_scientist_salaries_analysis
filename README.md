@@ -26,7 +26,7 @@ The data visualizations are in the folder
 
 # How to run this program
 
-Prior to running program you must have git and python installed
+Prior to running program you must have unix terminal, git and python installed
 
 In the terminal enter:
 ```
