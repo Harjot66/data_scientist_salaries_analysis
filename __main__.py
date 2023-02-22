@@ -67,5 +67,4 @@ print('\n', 'The correlation between salary and experience level is ' + str(roun
 
 corr_df_input = [['remote work', correlation_prop_remote_work], ['company size ', correlation_company_size], ['experience level', correlation_experience_level]]
 corr_df = pd.DataFrame(corr_df_input, columns = ['variable', 'correlation with salary'])
-print(corr_df)
 corr_df.plot.bar(x = 'variable', ylabel ='correlation coefficient with salary (r)', title = 'correlation coefficient with salary (r)')
