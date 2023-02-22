@@ -3,21 +3,25 @@
 import pandas as pd
 dscsvfile = pd.read_csv("cleaned_data.csv")
 
+#creating new dataframes for charts and making them variables
+
+remote_ratio_df = dscsvfile.groupby('remote_ratio').salary_in_usd.mean()
+company_size_df = dscsvfile.groupby('company_size').salary_in_usd.mean()
+experience_level_df = dscsvfile.groupby('experience_level').salary_in_usd.mean()
+
+#creating visualization for remote_ratio vs salary_in_usd
+
+remote_ratio_df.plot.bar(x = 'remote_ratio', y = '', title = 'average salary (USD) vs. remote work ratio', xlabel = 'remote work ratio', ylabel = 'average salary (USD)')
+
+#creating visualization for company_size vs salary_in_usd
+
+company_size_df.plot.bar(x = 'company_size', y = '', title = 'average salary (USD) vs. company size', xlabel = 'company size', ylabel = 'average salary (USD)')
+
+#creating visualization for experience_level vs salary_in_usd
+
+experience_level_df.plot.bar(x = 'experience_level', y = '', title = 'average salary (USD) vs. experience level', xlabel = 'experience level', ylabel = 'average salary (USD)')
+
 #calculating the correlation between the salary_in_usd column and the remote_ratio column
 
 correlation_prop_remote_work = dscsvfile['salary_in_usd'].corr(dscsvfile['remote_ratio'])
 print('\n', 'The correlation between salary and proportion of remote work is ' + str(round(correlation_prop_remote_work, 2)) + '.')
-
-#converting the company_size column into categories and calculating the correlation between the salary_in_usd column and
-#the company_size column
-
-dscsvfile['company_size'] = dscsvfile['company_size'].astype('category').cat.codes
-correlation_prop_remote_work = dscsvfile['salary_in_usd'].corr(dscsvfile['company_size'])
-print('\n', 'The correlation between salary and company size is ' + str(round(correlation_prop_remote_work, 2)) + '.')
-
-#converting the experience_level column into categories and calculating the correlation between the salary_in_usd column and
-#the experience_level column
-
-dscsvfile['experience_level'] = dscsvfile['experience_level'].astype('category').cat.codes
-correlation_prop_remote_work = dscsvfile['salary_in_usd'].corr(dscsvfile['experience_level'])
-print('\n', 'The correlation between salary and experience level is ' + str(round(correlation_prop_remote_work, 2)) + '.\n')
