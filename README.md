@@ -14,7 +14,7 @@ The correlation between salary and company size is -0.02.
 The correlation between salary and experience level is 0.62.
 ```
 
-Data visualizations are in folder.
+Data visualizations are in files.
 
 # Discussion
 
