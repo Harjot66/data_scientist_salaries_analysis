@@ -61,7 +61,7 @@ for value in dscsvfile['experience_level']:
 dscsvfile['experience_level_converted'] = experience_level_converted
 
 correlation_experience_level = dscsvfile['salary_in_usd'].corr(dscsvfile['experience_level_converted'])
-print('\n', 'The correlation between salary and experience level is ' + str(round(correlation_experience_level, 2)) + '.')
+print('\n', 'The correlation between salary and experience level is ' + str(round(correlation_experience_level, 2)) + '.\n')
 
 #creating a bar chart to compare the 3 correlations
 
