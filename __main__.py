@@ -8,7 +8,7 @@ dscsvfile = pd.read_csv("cleaned_data.csv")
 remote_ratio_df = dscsvfile.groupby('remote_ratio').salary_in_usd.mean()
 company_size_df = dscsvfile.groupby('company_size').salary_in_usd.mean()
 experience_level_df = dscsvfile.groupby('experience_level').salary_in_usd.mean()
-print(remote_ratio_df)
+
 #creating visualization for remote_ratio vs salary_in_usd
 
 remote_ratio_df.plot.bar(x = 'remote_ratio', y = '', title = 'average salary (USD) vs. remote work ratio', xlabel = 'remote work ratio', ylabel = 'average salary (USD)')
