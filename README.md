@@ -10,7 +10,7 @@ The results that were found through this analysis are:
 
 ```
 The correlation between salary and proportion of remote work is 0.15.
-The correlation between salary and company size is 0.02.
+The correlation between salary and company size is -0.02.
 The correlation between salary and experience level is 0.62.
 ```
 
@@ -32,5 +32,9 @@ In the terminal enter:
 ```
 cd desktop
 git clone https://github.com/Harjot66/data_scientist_salaries_analysis.git
+```
+then you must drag the "cleaned_data.csv" file out of the repository file and place it in your desktop,
+after this you must enter:
+```
 python3 data_scientist_salaries_analysis
 ```
