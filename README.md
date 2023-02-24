@@ -4,6 +4,19 @@ In this data analysis I will be analyzing data scientist job salaries (USD) by t
 
 This dataset has been retrieved from https://www.kaggle.com/datasets/niyalthakkar/data-science-jobs-analysis.
 
+Note: The columns in the dataset for company_size (values being S, M, and L) and experience_level (values being ES, EX, MI, and SE) were converted to numrical values for the purposes of calculating correlation with salary as follows:
+
+```
+S = 0
+M = 0.5
+L = 1
+
+ES = 0
+EX = 0
+MI = 0.5
+SE = 1
+```
+
 # Results
 
 The results that were found through this analysis are:
